@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="16.135">
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli" time="8.055">
+        <system-out>
+            <![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Ilker" yazar.......................................passed
+And Last name kutusuna "Bulut" yazar........................................passed
+And position kutusuna "QA" yazar............................................passed
+And Office kutusuna "Istanbul" yazar........................................passed
+And Extension kutusuna "levent" yazar.......................................passed
+And Start date kutusuna "2021-01-01" yazar..................................passed
+And Salary kutusuna "20000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Ilker" ile arama yapar......................................passed
+Then isim bolumunde "Ilker" oldugunu dogrular...............................passed
+And 3 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 2" time="5.69">
+        <failure message="disconnected: not connected to DevTools&#10;  (failed to check if window was closed: disconnected: not connected to DevTools)&#10;  (Session info: chrome=110.0.5481.78)&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c2b2b4c6ca6f41cc3ac3684f4c82c951, close {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Asremir\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50374}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50374/devtoo..., se:cdpVersion: 110.0.5481.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2b2b4c6ca6f41cc3ac3684f4c82c951" type="org.openqa.selenium.WebDriverException">
+            <![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Ramazan" yazar.....................................passed
+And Last name kutusuna "Can" yazar..........................................passed
+And position kutusuna "QA lead" yazar.......................................passed
+And Office kutusuna "Ankara" yazar..........................................passed
+And Extension kutusuna "Kizilay" yazar......................................passed
+And Start date kutusuna "2021-10-01" yazar..................................passed
+And Salary kutusuna "25000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Ramazan" ile arama yapar....................................passed
+Then isim bolumunde "Ramazan" oldugunu dogrular.............................passed
+And 3 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................failed
+
+StackTrace:
+org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=110.0.5481.78)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2b2b4c6ca6f41cc3ac3684f4c82c951, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Asremir\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50374}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50374/devtoo..., se:cdpVersion: 110.0.5481.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2b2b4c6ca6f41cc3ac3684f4c82c951
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
+	at utilities.Driver.closeDriver(Driver.java:68)
+	at stepdefinitions.GridStepDefinitions.sayfayi_kapatir(GridStepDefinitions.java:47)
+	at ✽.sayfayi kapatir(file:///C:/Users/Asremir/Desktop/com.team105CucumberGrid/src/test/resources/features/US1010_EditorsayfasindaKayitOlusturma.feature:21)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 3" time="0.765">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=110.0.5481.78)&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c2b2b4c6ca6f41cc3ac3684f4c82c951, get {url=https://editor.datatables.net/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Asremir\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50374}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50374/devtoo..., se:cdpVersion: 110.0.5481.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2b2b4c6ca6f41cc3ac3684f4c82c951" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[When kullanici "editorUrl" anasayfaya gider.................................failed
+Then new butonuna basar.....................................................skipped
+And First name kutusuna "Sule" yazar........................................skipped
+And Last name kutusuna "Saglam" yazar.......................................skipped
+And position kutusuna "Test lead" yazar.....................................skipped
+And Office kutusuna "Izmir" yazar...........................................skipped
+And Extension kutusuna "Konak" yazar........................................skipped
+And Start date kutusuna "2022-02-02" yazar..................................skipped
+And Salary kutusuna "23000" yazar...........................................skipped
+And Create tusuna basar.....................................................skipped
+When kullanici "Sule" ile arama yapar.......................................skipped
+Then isim bolumunde "Sule" oldugunu dogrular................................skipped
+And 3 saniye bekler.........................................................skipped
+Then sayfayi kapatir........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.78)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2b2b4c6ca6f41cc3ac3684f4c82c951, get {url=https://editor.datatables.net/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Asremir\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50374}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50374/devtoo..., se:cdpVersion: 110.0.5481.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2b2b4c6ca6f41cc3ac3684f4c82c951
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at stepdefinitions.AmazonStepdefinitions.kullaniciAnasayfayaGider(AmazonStepdefinitions.java:96)
+	at ✽.kullanici "editorUrl" anasayfaya gider(file:///C:/Users/Asremir/Desktop/com.team105CucumberGrid/src/test/resources/features/US1010_EditorsayfasindaKayitOlusturma.feature:8)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 4" time="0.686">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=110.0.5481.78)&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c2b2b4c6ca6f41cc3ac3684f4c82c951, get {url=https://editor.datatables.net/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Asremir\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50374}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50374/devtoo..., se:cdpVersion: 110.0.5481.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2b2b4c6ca6f41cc3ac3684f4c82c951" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[When kullanici "editorUrl" anasayfaya gider.................................failed
+Then new butonuna basar.....................................................skipped
+And First name kutusuna "Yasar" yazar.......................................skipped
+And Last name kutusuna "U" yazar............................................skipped
+And position kutusuna "QA" yazar............................................skipped
+And Office kutusuna "Istanbul" yazar........................................skipped
+And Extension kutusuna "Kadikoy" yazar......................................skipped
+And Start date kutusuna "2023-01-01" yazar..................................skipped
+And Salary kutusuna "25000" yazar...........................................skipped
+And Create tusuna basar.....................................................skipped
+When kullanici "Yasar" ile arama yapar......................................skipped
+Then isim bolumunde "Yasar" oldugunu dogrular...............................skipped
+And 3 saniye bekler.........................................................skipped
+Then sayfayi kapatir........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.78)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2b2b4c6ca6f41cc3ac3684f4c82c951, get {url=https://editor.datatables.net/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Asremir\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50374}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50374/devtoo..., se:cdpVersion: 110.0.5481.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2b2b4c6ca6f41cc3ac3684f4c82c951
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at stepdefinitions.AmazonStepdefinitions.kullaniciAnasayfayaGider(AmazonStepdefinitions.java:96)
+	at ✽.kullanici "editorUrl" anasayfaya gider(file:///C:/Users/Asremir/Desktop/com.team105CucumberGrid/src/test/resources/features/US1010_EditorsayfasindaKayitOlusturma.feature:8)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 5" time="0.763">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=110.0.5481.78)&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c2b2b4c6ca6f41cc3ac3684f4c82c951, get {url=https://editor.datatables.net/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Asremir\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50374}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50374/devtoo..., se:cdpVersion: 110.0.5481.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2b2b4c6ca6f41cc3ac3684f4c82c951" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[When kullanici "editorUrl" anasayfaya gider.................................failed
+Then new butonuna basar.....................................................skipped
+And First name kutusuna "Meryem" yazar......................................skipped
+And Last name kutusuna "Toprak" yazar.......................................skipped
+And position kutusuna "QA lead" yazar.......................................skipped
+And Office kutusuna "Istanbul" yazar........................................skipped
+And Extension kutusuna "levent" yazar.......................................skipped
+And Start date kutusuna "2022-11-11" yazar..................................skipped
+And Salary kutusuna "20000" yazar...........................................skipped
+And Create tusuna basar.....................................................skipped
+When kullanici "Meryem" ile arama yapar.....................................skipped
+Then isim bolumunde "Meryem" oldugunu dogrular..............................skipped
+And 3 saniye bekler.........................................................skipped
+Then sayfayi kapatir........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.78)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2b2b4c6ca6f41cc3ac3684f4c82c951, get {url=https://editor.datatables.net/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Asremir\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50374}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50374/devtoo..., se:cdpVersion: 110.0.5481.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2b2b4c6ca6f41cc3ac3684f4c82c951
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at stepdefinitions.AmazonStepdefinitions.kullaniciAnasayfayaGider(AmazonStepdefinitions.java:96)
+	at ✽.kullanici "editorUrl" anasayfaya gider(file:///C:/Users/Asremir/Desktop/com.team105CucumberGrid/src/test/resources/features/US1010_EditorsayfasindaKayitOlusturma.feature:8)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
