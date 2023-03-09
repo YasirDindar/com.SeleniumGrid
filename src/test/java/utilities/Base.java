@@ -15,7 +15,7 @@ public class Base {
 
     DesiredCapabilities cap = new DesiredCapabilities();
 
-    static String hubURL = "http://192.168.95.54:4444";
+    static String hubURL = "http://192.168.1.100:4444";
 
     public WebDriver setDriver(WebDriver driver, String browser) {
 
